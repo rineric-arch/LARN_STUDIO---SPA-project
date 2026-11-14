@@ -1,0 +1,27 @@
+# Resultados da compilação
+/build/
+/bin/
+*.exe
+*.out
+*.o
+*.obj
+
+# Depuração
+*.pdb
+*.ilk
+
+# Temporários de edição
+*.swp
+*.swo
+*~
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Configurações locais; preservar configurações compartilhadas do VS Code
+/.vscode/*.local.json
+
+# Acrescentar regras específicas para dados gerados quando suas pastas forem definidas.
+
