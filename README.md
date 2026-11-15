@@ -77,7 +77,9 @@ Quando os fontes estiverem diretamente em `src/`, compile da raiz do repositóri
 New-Item -ItemType Directory -Force -Path build | Out-Null
 gcc -std=c17 -Wall -Wextra -Wpedantic -g -I include src/*.c -o build/spa.exe
 ```
-
+ou Utilize atalho 
+ctrl+shift+B
+para compilar uma nova build atualizada após alteração nos arquivos
 Execute somente após compilação bem-sucedida:
 
 ```powershell
