@@ -4,7 +4,7 @@ Projeto acadêmico de Programação e Algoritmos: sistema em C para gerenciar pa
 
 ## Situação do projeto
 
-Configuração inicial. codigo em alteração e desenvolvimento Os comandos de compilação são um modelo para a estrutura proposta e deverão ser validados quando o código inicial for integrado.
+Configuração inicial. Ainda não há código-fonte. Os comandos de compilação são um modelo para a estrutura proposta e deverão ser validados quando o código inicial for integrado.
 
 ## Ambiente
 
@@ -77,9 +77,7 @@ Quando os fontes estiverem diretamente em `src/`, compile da raiz do repositóri
 New-Item -ItemType Directory -Force -Path build | Out-Null
 gcc -std=c17 -Wall -Wextra -Wpedantic -g -I include src/*.c -o build/spa.exe
 ```
-ou Utilize atalho 
-ctrl+shift+B
-para compilar uma nova build atualizada após alteração nos arquivos
+
 Execute somente após compilação bem-sucedida:
 
 ```powershell

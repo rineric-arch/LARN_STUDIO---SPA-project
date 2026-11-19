@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "atendimentos.h"
 #include "interface.h"
+#include "estruturas.h"
 
 void filadeEspera()
 {
@@ -36,6 +37,7 @@ void gerenciarAtendimento()
             break;
         default:
             printf("opção invalida\n");
+            system("pause");
             break;
         }
 

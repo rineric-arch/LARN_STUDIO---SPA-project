@@ -3,7 +3,7 @@
 #include "interface.h"
 #include "pacientes.h"
 #include "atendimentos.h"
-
+#include "estruturas.h"
 int main()
 {
     
@@ -55,7 +55,8 @@ int main()
                 break;
            
             default:
-                    printf("não é uma opção valida\n");
+                    printf("opção invalida\n");
+                    system("pause");
                 break;
             }
         }
