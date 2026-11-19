@@ -4,7 +4,7 @@ Projeto acadêmico de Programação e Algoritmos: sistema em C para gerenciar pa
 
 ## Situação do projeto
 
-Configuração inicial. Ainda não há código-fonte. Os comandos de compilação são um modelo para a estrutura proposta e deverão ser validados quando o código inicial for integrado.
+Configuração inicial. codigo em alteração e desenvolvimento Os comandos de compilação são um modelo para a estrutura proposta e deverão ser validados quando o código inicial for integrado.
 
 ## Ambiente
 
