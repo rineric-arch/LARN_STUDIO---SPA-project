@@ -1,0 +1,52 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Criar pasta build",
+            "type": "shell",
+            "command": "New-Item -ItemType Directory -Force -Path build | Out-Null",
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "shell": {
+                    "executable": "powershell.exe",
+                    "args": ["-NoProfile", "-Command"]
+                }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Compilar SPA",
+            "type": "process",
+            "command": "gcc",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-g3",
+                "-I",
+                "include",
+                "src/*.c",
+                "-o",
+                "build/spa.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": "Criar pasta build",
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Compilar e executar SPA",
+            "type": "process",
+            "command": "${workspaceFolder}/build/spa.exe",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": "Compilar SPA",
+            "problemMatcher": []
+        }
+    ]
+}
